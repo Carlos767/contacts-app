@@ -1,0 +1,18 @@
+<div class="container">
+    <p>First_Name: <%= @contact.first_name %></p>
+    <p>Last_Name: <%= @contact.last_name %></p>
+    <p>Email: <%= @contact.email %></p>
+    <p>Phoner: <%= @contact.phone %></p>
+    <p>Image: <%=@product.image %></p>
+    <p>Description: <%= @product.description %></p>
+    <p>Created at: <%= @product.created_at %></p>
+
+  <div class="row">
+  <br></br>
+  <a class="btn btn-default" href="/contacts/<%= @contact.id %>/edit" role="button">Edit</a>
+
+  <a class="btn btn-default" href="/contacts/<%= @contact.id %>/destroy" role="button">Delete Contact</a>
+
+  <a class="btn btn-default" href="../contacts" role="button">Back to Contacts</a>
+</div>
+</div>
